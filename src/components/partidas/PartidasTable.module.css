@@ -1,0 +1,37 @@
+/* styles/PartidasTable.module.css */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000; /* Fundo preto para a tabela */
+  color: #fff; /* Texto branco para contraste */
+}
+
+.table__th,
+.table__td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table__th {
+  background-color: #222; /* Fundo mais escuro para os cabeçalhos */
+  font-weight: bold;
+}
+
+.table__image {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.table__row {
+  transition: background-color 0.3s ease;
+}
+
+.table__row:hover {
+  background-color: #444; /* Cor de fundo mais clara para o hover */
+}
+
+.table__row:hover .table__td {
+  background-color: #444; /* Mantém o hover visível nas células também */
+}
